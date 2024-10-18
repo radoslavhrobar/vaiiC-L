@@ -1,0 +1,21 @@
+.container-fluid {
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+}
+
+.picture-left {
+    background-image: url("../imgs/kinoALiteratura1.jpg");
+    background-size: contain;
+}
+
+.picture-right {
+    background-image: url("../imgs/kinoALiteratura2.png");
+    background-size: contain;
+}
+
+
+
+
