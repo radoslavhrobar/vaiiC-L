@@ -1,11 +1,3 @@
-.container-fluid {
-    height: 100vh;
-}
-
-.row {
-    height: 100%;
-}
-
 @media screen and (min-width: 992px) {
     .shop {
         margin-left: 20px;
@@ -46,6 +38,60 @@
 .carousel {
     margin-top: 1vh;
 }
+
+.kino {
+    margin-top: 2vh;
+    border-top: 1px solid burlywood;
+    border-bottom: 1px solid burlywood;
+    justify-content: center;
+    position: relative;
+}
+
+.kino a {
+    color: black;
+    font-weight: bold;
+}
+
+.novinky {
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    color: saddlebrown;
+    border-bottom: 1px solid burlywood;
+}
+
+.kino-obsah {
+    border: 1px solid burlywood;
+}
+
+.card {
+    margin-top: 20px;
+    width: 24rem;
+}
+
+.lava {
+    margin-right: auto;
+}
+
+.prava {
+    margin-left: auto;
+}
+
+.card-link {
+    color: brown;
+    text-decoration: none;
+}
+
+.card-body {
+    padding-left: 90px;
+}
+
+
+
+
+
+
 
 
 
