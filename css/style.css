@@ -6,15 +6,45 @@
     height: 100%;
 }
 
+@media screen and (min-width: 992px) {
+    .shop {
+        margin-left: 20px;
+    }
+}
+
+.middle {
+    background-color: antiquewhite;
+}
+
 .picture-left {
     background-image: url("../imgs/kinoALiteratura1.jpg");
-    background-size: contain;
 }
 
 .picture-right {
     background-image: url("../imgs/kinoALiteratura2.png");
-    background-size: contain;
 }
+
+.side-pictures {
+    background-size: contain;
+    background-position: center;
+}
+
+.navbar {
+     background: conic-gradient(burlywood, blanchedalmond, peru, tan);
+     margin: 5px -8px 0;
+     padding: 5px 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+ }
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: serif;
+    font-size: 200%;
+    letter-spacing: 1px;
+}
+
+
+
 
 
 
