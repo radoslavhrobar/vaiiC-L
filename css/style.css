@@ -26,7 +26,7 @@
      margin: 5px -8px 0;
      padding: 5px 10px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
- }
+}
 
 .navbar-brand {
     font-weight: bold;
@@ -67,15 +67,6 @@
 
 .card {
     margin-top: 20px;
-    width: 24rem;
-}
-
-.lava {
-    margin-right: auto;
-}
-
-.prava {
-    margin-left: auto;
 }
 
 .card-link {
@@ -85,6 +76,55 @@
 
 .card-body {
     padding-left: 90px;
+}
+
+.nav-link:hover {
+    color: darkgoldenrod;
+}
+
+.tabulka-vyberu {
+    background-color: burlywood;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.tabulka-vyberu th, .tabulka-vyberu td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.btn-primary {
+    border-color: peru;
+    background-color: peru;
+    border-radius: 15px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    border-color: saddlebrown;
+    background-color: saddlebrown;
+}
+
+.vyber-prechadzanie {
+    text-align: center;
+    margin-top: 5px;
+    border-top: 1px solid burlywood;
+}
+
+.vyber-prechadzanie button {
+    color: saddlebrown;
+}
+
+.list-group-numbered {
+    margin-top: 2px;
+}
+
+.list-group-numbered li {
+    color: saddlebrown;
+    font-weight: bold;
 }
 
 
