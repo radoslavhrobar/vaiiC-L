@@ -1,22 +1,32 @@
 @media screen and (min-width: 992px) {
-    .shop {
-        margin-left: 20px;
+    .burza-knih {
+        margin-left: 35px;
+    }
+
+    .moj-ucet {
+        margin-right: 10px;
     }
 }
 
-.middle {
+@media screen and (max-width: 992px) {
+    .moj-ucet {
+        margin-bottom: 10px;
+    }
+}
+
+.stred {
     background-color: antiquewhite;
 }
 
-.picture-left {
+.pozadie-vlavo {
     background-image: url("../imgs/kinoALiteratura1.jpg");
 }
 
-.picture-right {
+.pozadie-vpravo {
     background-image: url("../imgs/kinoALiteratura2.png");
 }
 
-.side-pictures {
+.pozadie-vlavo, .pozadie-vpravo {
     background-size: contain;
     background-position: center;
 }
