@@ -161,14 +161,27 @@ body {
     color: saddlebrown;
 }
 
-.list-group-numbered {
-    margin-top: 2px;
+.tabulka-vybranych {
+    border: 2px solid brown;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.list-group-numbered li {
+.tabulka-vybranych tr:nth-child(4n+2) td {
     color: saddlebrown;
     font-weight: bold;
+    font-style: italic;
+    border-top: 1px solid brown;
 }
+
+.tabulka-vybranych th {
+    text-align: center;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+    font-size: larger;
+}
+
 
 
 
