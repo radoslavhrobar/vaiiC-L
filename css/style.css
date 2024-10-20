@@ -1,5 +1,5 @@
 @media screen and (min-width: 992px) {
-    .burza-knih {
+    #burza-knih {
         margin-left: 35px;
     }
 
@@ -14,8 +14,8 @@
     }
 }
 
-.stred {
-    background-color: antiquewhite;
+body {
+    background-color: blanchedalmond;
 }
 
 .pozadie-vlavo {
@@ -47,6 +47,35 @@
 
 .carousel {
     margin-top: 1vh;
+}
+
+.registracia-info {
+    border: 2px dashed black;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registracia-info th, .registracia-info td {
+    padding: 10px;
+}
+
+.registracia-info tr:last-child td {
+    text-align: center;
+    transform: translate(45%);
+}
+
+.registracia-info tr:first-child {
+    border: 1px solid black;
+}
+
+.registracia-info tr:first-child th a {
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+.registracia-info tr:last-child td a {
+    color: red;
 }
 
 .kino {
@@ -136,6 +165,8 @@
     color: saddlebrown;
     font-weight: bold;
 }
+
+
 
 
 
