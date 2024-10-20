@@ -45,7 +45,11 @@ body {
     letter-spacing: 1px;
 }
 
-.carousel {
+.navbar-nav a {
+    font-weight: bold;
+}
+
+.hlavny-carousel {
     margin-top: 1vh;
 }
 
@@ -60,11 +64,6 @@ body {
     padding: 10px;
 }
 
-.registracia-info tr:last-child td {
-    text-align: center;
-    transform: translate(45%);
-}
-
 .registracia-info tr:first-child {
     border: 1px solid black;
 }
@@ -74,11 +73,15 @@ body {
     text-decoration: none;
 }
 
+.registracia-info tr:last-child td {
+    text-align: center;
+}
+
 .registracia-info tr:last-child td a {
     color: red;
 }
 
-.kino {
+.kino-navbar {
     margin-top: 2vh;
     border-top: 1px solid burlywood;
     border-bottom: 1px solid burlywood;
@@ -86,9 +89,13 @@ body {
     position: relative;
 }
 
-.kino a {
+.kino-navbar a {
     color: black;
     font-weight: bold;
+}
+
+.kino-navbar .nav-link:hover, .kino-navbar .nav-link:focus {
+    color: darkgoldenrod;
 }
 
 .novinky {
@@ -115,10 +122,6 @@ body {
 
 .card-body {
     padding-left: 90px;
-}
-
-.nav-link:hover {
-    color: darkgoldenrod;
 }
 
 .tabulka-vyberu {
@@ -151,6 +154,7 @@ body {
     text-align: center;
     margin-top: 5px;
     border-top: 1px solid burlywood;
+    border-bottom: 1px solid burlywood;
 }
 
 .vyber-prechadzanie button {
