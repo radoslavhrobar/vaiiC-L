@@ -1,0 +1,204 @@
+@media screen and (min-width: 992px) {
+    #burza-knih {
+        margin-left: 35px;
+    }
+
+    .moj-ucet {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .moj-ucet {
+        margin-bottom: 10px;
+    }
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.pozadie-vlavo {
+    background-image: url("../imgs/kinoALiteratura1.jpg");
+}
+
+.pozadie-vpravo {
+    background-image: url("../imgs/kinoALiteratura2.png");
+}
+
+.pozadie-vlavo, .pozadie-vpravo {
+    background-size: contain;
+    background-position: center;
+}
+
+.navbar {
+     background: conic-gradient(burlywood, blanchedalmond, peru, tan);
+     margin: 5px -8px 0;
+     padding: 5px 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: serif;
+    font-size: 200%;
+    letter-spacing: 1px;
+}
+
+.navbar-nav a {
+    font-weight: bold;
+}
+
+.hlavny-carousel {
+    margin-top: 1vh;
+}
+
+.registracia-info {
+    border: 2px dashed black;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registracia-info th, .registracia-info td {
+    padding: 10px;
+}
+
+.registracia-info tr:first-child {
+    border: 1px solid black;
+}
+
+.registracia-info tr:first-child th a {
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+.registracia-info tr:last-child td {
+    text-align: center;
+}
+
+.registracia-info tr:last-child td a {
+    color: red;
+}
+
+.kino-navbar {
+    margin-top: 2vh;
+    border-top: 1px solid burlywood;
+    border-bottom: 1px solid burlywood;
+    justify-content: center;
+    position: relative;
+}
+
+.kino-navbar a {
+    color: black;
+    font-weight: bold;
+}
+
+.kino-navbar .nav-link:hover, .kino-navbar .nav-link:focus {
+    color: darkgoldenrod;
+}
+
+.novinky {
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    color: saddlebrown;
+    border-bottom: 1px solid burlywood;
+}
+
+.kino-obsah {
+    border: 1px solid burlywood;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-link {
+    color: brown;
+    text-decoration: none;
+}
+
+.card-body {
+    padding-left: 90px;
+}
+
+.tabulka-vyberu {
+    background-color: burlywood;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.tabulka-vyberu th, .tabulka-vyberu td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.btn-primary {
+    border-color: brown;
+    background-color: peru;
+    border-radius: 15px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    border-color: brown;
+    background-color: saddlebrown;
+}
+
+.vyber-prechadzanie {
+    text-align: center;
+    margin-top: 5px;
+    border-top: 1px solid burlywood;
+    border-bottom: 1px solid burlywood;
+}
+
+.vyber-prechadzanie button {
+    color: saddlebrown;
+}
+
+.tabulka-vybranych {
+    border: 2px solid brown;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabulka-vybranych tr:nth-child(4n+2) td {
+    color: saddlebrown;
+    font-weight: bold;
+    font-style: italic;
+    border-top: 1px solid brown;
+}
+
+.tabulka-vybranych th {
+    text-align: center;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
