@@ -19,11 +19,11 @@ body {
 }
 
 .pozadie-vlavo {
-    background-image: url("../imgs/kinoALiteratura1.jpg");
+    background-image: url("../images/kinoALiteratura1.jpg");
 }
 
 .pozadie-vpravo {
-    background-image: url("../imgs/kinoALiteratura2.png");
+    background-image: url("../images/kinoALiteratura2.png");
 }
 
 .pozadie-vlavo, .pozadie-vpravo {
@@ -181,6 +181,7 @@ body {
     font-variant: small-caps;
     font-size: larger;
 }
+
 
 
 
