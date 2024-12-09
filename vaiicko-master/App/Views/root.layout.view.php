@@ -24,9 +24,6 @@
         <div class="col-xl-8">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <a class="navbar-brand" href="<?= $link->url("home.index") ?>">C&L</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -65,14 +62,11 @@
                     </form>
                 </div>
             </nav>
+            <div class="web-content">
+                <?= $contentHTML ?>
+            </div>
         </div>
         <div class="col-xl-2 pozadie-vpravo d-none d-xl-block"></div>
-    </div>
-</div>
-
-<div class="container-fluid mt-3">
-    <div class="web-content">
-        <?= $contentHTML ?>
     </div>
 </div>
 </body>

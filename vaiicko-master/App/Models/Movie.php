@@ -7,7 +7,7 @@ use App\Core\Model;
 class Movie extends Model
 {
     protected int $id;
-    protected string $meno;
+    protected string $nazov;
     protected int $rokVydania;
     protected string $miestoVydania;
     protected string $hodnotenie;
@@ -15,16 +15,6 @@ class Movie extends Model
     public function getId(): int
     {
         return $this->id;
-    }
-
-    public function getMeno(): string
-    {
-        return $this->meno;
-    }
-
-    public function setMeno(string $meno): void
-    {
-        $this->meno = $meno;
     }
 
     public function getRokVydania(): int
@@ -55,6 +45,16 @@ class Movie extends Model
     public function setHodnotenie(string $hodnotenie): void
     {
         $this->hodnotenie = $hodnotenie;
+    }
+
+    public function getNazov(): string
+    {
+        return $this->nazov;
+    }
+
+    public function setNazov(string $nazov): void
+    {
+        $this->nazov = $nazov;
     }
 
 
