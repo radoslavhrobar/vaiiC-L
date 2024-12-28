@@ -102,6 +102,6 @@
             <td></td>
             <td></td>
         </tr>
-    <?php endforeach; ?>
+    <?php endforeach ?>
 </table>
 

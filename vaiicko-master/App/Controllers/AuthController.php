@@ -20,7 +20,7 @@ class AuthController extends AControllerBase
      */
     public function index(): Response
     {
-        return $this->redirect(Configuration::LOGIN_URL);
+        return $this->html();
     }
 
     /**

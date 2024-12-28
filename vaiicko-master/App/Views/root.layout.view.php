@@ -13,9 +13,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../public/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="public/css/style.css">
-    <script src="public/js/script.js"></script>
+    <script src="../../public/js/script.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -47,8 +47,8 @@
                             <?php if ($auth->isLogged()) { ?>
                                 <li><a class="dropdown-item" href="<?= $link->url("auth.logout") ?>">Odhlásenie</a></li>
                             <?php } else { ?>
-                                <li><a class="dropdown-item" href="<?= \App\Config\Configuration::LOGIN_URL ?>">Prihlásenie</a></li>
-                                <li><a class="dropdown-item" href="#">Registrácia</a></li>
+                                <li><a class="dropdown-item" href="<?= $link->url("auth.login") ?>">Prihlásenie</a></li>
+                                <li><a class="dropdown-item" href="<?= $link->url("auth.index") ?>">Registrácia</a></li>
                                 <li><a class="dropdown-item" href="#">Zabudnuté heslo</a></li>
                             <?php } ?>
                         </ul>

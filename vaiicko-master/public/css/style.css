@@ -8,9 +8,15 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .moj-ucet {
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    label {
+        text-align: end;
     }
 }
 
@@ -181,6 +187,28 @@ body {
     font-variant: small-caps;
     font-size: larger;
 }
+
+.log-sign-info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dod-info-title {
+    color: red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 15px;
+}
+
+.dolezite {
+    color: red;
+}
+
+
 
 
 
