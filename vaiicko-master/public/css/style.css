@@ -194,17 +194,22 @@ body {
 }
 
 .dod-info-title {
-    color: red;
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .form-container {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .dolezite {
+    color: red;
+}
+
+div span {
+    text-align: center;
+    font-size: 15px;
     color: red;
 }
 
