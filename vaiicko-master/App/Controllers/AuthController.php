@@ -36,22 +36,30 @@ class AuthController extends AControllerBase
             $upozornenia['email'] = "Tento email už existuje!";
         }
 
-        if (empty($data['p_meno'])) {
-            $upozornenia['p_meno'] = "Používateľské meno musí byť vyplnené!";
-        } else if (strlen($data['p_meno']) < 3 || strlen($data['p_meno']) > 30) {
-            $upozornenia['p_meno'] = "Používateľské meno musí byť v rozmedzí od 3 do 30 znakov!";
-        } else if (is_numeric($data['p_meno'][0])) {
-            $upozornenia['p_meno'] = "Prvý znak v používateľskom mene niesme byť číslica!";
-        } else if (!ctype_alnum($data['p_meno'])) {
-            $upozornenia['p_meno'] = "Používateľské meno môže obsahovať len alfanumerické znaky a musí byť bez medzier!";
-        } else if (!empty(User::getAll(whereClause: '`p_meno` LIKE ?', whereParams: [$data['p_meno']]))) {
-            $upozornenia['p_meno'] = "Toto používateľské meno už existuje!";
+        if (empty($data['pMeno'])) {
+            $upozornenia['pMeno'] = "Používateľské meno musí byť vyplnené!";
+        } else if (strlen($data['pMeno']) < 3 || strlen($data['pMeno']) > 30) {
+            $upozornenia['pMeno'] = "Používateľské meno musí byť dlhé v rozmedzí od 3 do 30 znakov!";
+        } else if (is_numeric($data['pMeno'][0])) {
+            $upozornenia['pMeno'] = "Prvý znak v používateľskom mene niesme byť číslica!";
+        } else if (!ctype_alnum($data['pMeno'])) {
+            $upozornenia['pMeno'] = "Používateľské meno môže obsahovať len alfanumerické znaky a musí byť bez medzier!";
+        } else if (!empty(User::getAll(whereClause: '`p_meno` LIKE ?', whereParams: [$data['pMeno']]))) {
+            $upozornenia['pMeno'] = "Toto používateľské meno už existuje!";
         }
 
         if (empty($data['heslo'])) {
             $upozornenia['heslo'] = "Heslo musí byť vyplnené!";
         } else if (strlen($data['heslo']) < 8) {
             $upozornenia['heslo'] = "Heslo musí byť minimálne 8 znakov dlhé!";
+        } else if (!preg_match('/[A-Z]/', $data['heslo'])) {
+            $upozornenia['heslo'] = "Heslo musí obsahovať aspoň jedno veľké písmeno!";
+        } else if (!preg_match('/[a-z]/', $data['heslo'])) {
+            $upozornenia['heslo'] = "Heslo musí obsahovať aspoň jedno malé písmeno!";
+        } else if (!preg_match('/[0-9]/', $data['heslo'])) {
+            $upozornenia['heslo'] = "Heslo musí obsahovať aspoň jednu číslicu!";
+        } else if (!preg_match('/[!@#$%^&*]/', $data['heslo'])) {
+            $upozornenia['heslo'] = "Heslo musí obsahovať aspoň jeden zo špeciálnych znakov na výber! [!@#$%^&*]";
         }
 
         if (empty($data['overenieHesla'])) {
@@ -66,17 +74,17 @@ class AuthController extends AControllerBase
             } else if (!preg_match('/^[a-zA-ZáäčďéëíĺľňóöôřšťúüýžÁÄČĎÉËÍĹĽŇÓÖÔŘŠŤÚÜÝŽ]+$/u', $data['meno'])) {
                 $upozornenia['meno'] = "Meno môže obsahovať iba písmená!";
             } else if (!ctype_upper($data['meno'][0])) {
-                $upozornenia['meno'] = "Meno musí začínať velkým písmenom!";
+                $upozornenia['meno'] = "Meno musí začínať veľkým písmenom!";
             }
         }
 
         if (!empty($data['priezvisko'])) {
             if (strlen($data['priezvisko']) > 30) {
                 $upozornenia['priezvisko'] = "Priezvisko nesmie prekročiť dĺžku 30 znakov!";
-            } else if (!preg_match('/^[a-zA-ZáäčďéëíĺľňóöôřšťúüýžÁÄČĎÉËÍĹĽŇÓÖÔŘŠŤÚÜÝŽ]+$/u', $data['priezvisko'])) {
+            } else if (!preg_match('/^[a-zA-ZáäčďéëíĺľňóöôřšťúüýžÁÄČĎÉËÍĹĽŇÓÖÔŘŠŤÚÜÝŽ]{2,}$/u', $data['priezvisko'])) {
                 $upozornenia['priezvisko'] = "Priezvisko môže obsahovať iba písmená!";
             } else if (!ctype_upper($data['priezvisko'][0])) {
-                $upozornenia['priezvisko'] = "Priezvisko musí začínať velkým písmenom!";
+                $upozornenia['priezvisko'] = "Priezvisko musí začínať veľkým písmenom!";
             }
         }
 

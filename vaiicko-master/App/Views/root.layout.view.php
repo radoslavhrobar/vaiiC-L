@@ -4,6 +4,7 @@
 /** @var \App\Core\IAuthenticator $auth */
 /** @var \App\Core\LinkGenerator $link */
 ?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -15,7 +16,6 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../public/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <script src="../../public/js/script.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -69,5 +69,6 @@
         <div class="col-xl-2 pozadie-vpravo d-none d-xl-block"></div>
     </div>
 </div>
+<script src="../../public/js/skript.js"></script>
 </body>
 </html>

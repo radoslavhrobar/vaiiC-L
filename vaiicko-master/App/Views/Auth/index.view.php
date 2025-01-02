@@ -3,46 +3,46 @@
 /** @var \App\Core\LinkGenerator $link */
 ?>
 
-<form action="<?= $link->url("auth.registruj") ?>" method="post" autocomplete="on">
+<form id="registracia" class="register" action="<?= $link->url("auth.registruj") ?>" method="post" autocomplete="on">
     <h4 class="log-sign-info">Registrácia</h4>
     <div class="row form-container">
         <label class="col-sm-3" for="email">Email:
             <span class="dolezite">*</span>
         </label>
-        <input class="col-sm-6" type="email" name="email" id="email" placeholder="meno@server.sk" value="<?= $_POST['email'] ?? '' ?>" required autofocus>
-        <span><?= !empty($data['upozornenia']['email']) ? $data['upozornenia']['email'] : "" ?></span>
+        <input class="col-sm-6" type="text" name="email" id="email" placeholder="meno@server.sk" value="<?= $_POST['email'] ?? '' ?>" autofocus>
+        <span id="emailSprava"><?= !empty($data['upozornenia']['email']) ? $data['upozornenia']['email'] : "" ?></span>
     </div>
     <div class="row form-container">
-        <label class="col-sm-3" for="pmeno">Používateľské meno:
+        <label class="col-sm-3" for="pMeno">Používateľské meno:
             <span class="dolezite">*</span>
         </label>
-        <input class="col-sm-6" type="text" name="p_meno" id="pmeno" value="<?= $_POST['p_meno'] ?? '' ?>" required>
-        <span><?= !empty($data['upozornenia']['p_meno']) ? $data['upozornenia']['p_meno'] : "" ?></span>
+        <input class="col-sm-6" type="text" name="pMeno" id="pMeno" value="<?= $_POST['pMeno'] ?? '' ?>">
+        <span id="pMenoSprava"><?= !empty($data['upozornenia']['pMeno']) ? $data['upozornenia']['pMeno'] : "" ?></span>
     </div>
     <div class="row form-container">
-        <label class="col-sm-3" for="password">Heslo:
+        <label class="col-sm-3" for="heslo">Heslo:
             <span class="dolezite">*</span>
         </label>
-        <input class="col-sm-6" type="password" name="heslo" id="password" value="<?= $_POST['heslo'] ?? '' ?>" required>
-        <span><?= !empty($data['upozornenia']['heslo']) ? $data['upozornenia']['heslo'] : "" ?></span>
+        <input class="col-sm-6" type="password" name="heslo" id="heslo" value="<?= $_POST['heslo'] ?? '' ?>">
+        <span id="hesloSprava"><?= !empty($data['upozornenia']['heslo']) ? $data['upozornenia']['heslo'] : "" ?></span>
     </div>
     <div class="row form-container">
-        <label class="col-sm-3" for="checkPassword">Overenie hesla:
+        <label class="col-sm-3" for="overenieHesla">Overenie hesla:
             <span class="dolezite">*</span>
         </label>
-        <input class="col-sm-6" type="password" name="overenieHesla" id="checkPassword" value="<?= $_POST['overenieHesla'] ?? '' ?>" required>
-        <span><?= !empty($data['upozornenia']['overenieHesla']) ? $data['upozornenia']['overenieHesla'] : "" ?></span>
+        <input class="col-sm-6" type="password" name="overenieHesla" id="overenieHesla" value="<?= $_POST['overenieHesla'] ?? '' ?>">
+        <span id="overenieHeslaSprava"><?= !empty($data['upozornenia']['overenieHesla']) ? $data['upozornenia']['overenieHesla'] : "" ?></span>
     </div>
     <h5 class="dod-info-title">Dodatočné informácie:</h5>
     <div class="row form-container">
         <label class="col-sm-3" for="meno">Meno:</label>
-        <input class="col-sm-6" type="text" name="meno" id="meno" pattern="[A-ZÁÄČĎÉĚÍĹĽŇÓÔŔŠŤÚŮÝŽ][a-záäčďéěíĺľňóôŕšťúůýž]*" title="Meno musí začínať veľkým písmenom a obsahovať len písmená!" value="<?= $_POST['meno'] ?? '' ?>">
-        <span><?= !empty($data['upozornenia']['meno']) ? $data['upozornenia']['meno'] : "" ?></span>
+        <input class="col-sm-6" type="text" name="meno" id="meno" value="<?= $_POST['meno'] ?? '' ?>">
+        <span id="menoSprava"><?= !empty($data['upozornenia']['meno']) ? $data['upozornenia']['meno'] : "" ?></span>
     </div>
     <div class="row form-container">
         <label class="col-sm-3" for="priezvisko">Priezvisko:</label>
-        <input class="col-sm-6" type="text" name="priezvisko" id="priezvisko" pattern="[A-ZÁÄČĎÉĚÍĹĽŇÓÔŔŠŤÚŮÝŽ][a-záäčďéěíĺľňóôŕšťúůýž]*" title="Priezvisko musí začínať veľkým písmenom a obsahovať len písmená!" value="<?= $_POST['priezvisko'] ?? '' ?>">
-        <span><?= !empty($data['upozornenia']['priezvisko']) ? $data['upozornenia']['priezvisko'] : "" ?></span>
+        <input class="col-sm-6" type="text" name="priezvisko" id="priezvisko" value="<?= $_POST['priezvisko'] ?? '' ?>">
+        <span id="priezviskoSprava"><?= !empty($data['upozornenia']['priezvisko']) ? $data['upozornenia']['priezvisko'] : "" ?></span>
     </div>
     <div class="row form-container">
         <label class="col-sm-3" for="pohlavie">Pohlavie:</label>
@@ -54,6 +54,6 @@
         <span><?= !empty($data['upozornenia']['pohlavie']) ? $data['upozornenia']['pohlavie'] : "" ?></span>
     </div>
     <div class="text-center">
-        <button class="btn btn-primary" type="submit">Zaregistrovať</button>
+        <input class="btn btn-primary" type="submit" value="Zaregistrovať">
     </div>
 </form>

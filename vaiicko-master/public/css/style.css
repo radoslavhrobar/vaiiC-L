@@ -213,7 +213,10 @@ div span {
     color: red;
 }
 
-
+.register input {
+    outline: none;
+    border-style: solid;
+}
 
 
 
